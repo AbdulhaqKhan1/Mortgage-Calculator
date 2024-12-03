@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <section class="main-container">
+    <article>
+      <div class="header">
+        <h2>Mortgage calculator</h2>
+        <p class="header-text">Clear All</p>
+      </div>
+      <form id="form">
+
+        <div class="main-body">
+          
+          <p>Mortgage Amount</p>
+          <input type="text" name="amount" class="mortgage-amount" required>
+          
+          <div class="input-container">
+            
+            <div>
+              <p>Mortgage Term</p>
+              <input type="number" name="term" class="mortgage-team" required>
+            </div>
+            
+            <div>
+              <p>Interest Rate</p>
+              <input type="number" name="interest" class="interest-rate" required>
+            </div>
+            
+          </div>
+          
+          <p>Mortgage Type</p>
+          <div class="mortgage-type"> <input type="radio" name="type" class="radio"><h3>Repayment</h3></div>
+          <div class="mortgage-type"> <input type="radio" name="type" class="radio"><h3>Interest Only</h3></div>
+          
+          <button type="submit" class="button">
+            <img src="./assets/images/icon-calculator.svg"/>
+            Calculate Repayments
+          </button>
+          
+        </div>
+      </form>
+
+    </article>
+
+    <div id="result-container" class="second-article">
+
+      <article class="results">
+        <img src="./assets/images/illustration-empty.svg">
+        <h1 class="shown-results">Results shown here</h1>
+        <p class="text">Complete the form and click "Calculate repayments" to see what your monthly repayment will be</p>
+      </article>
+    </div>
+    
+
+    <!-- <article class="desktop-design">
+      <h1 class="your-results">Your results</h1>
+      <p class="text-form">Yor results are shown below based on the information you provided.To adjust the results, edit the form and click *calculate repayments* again.</p>
+   
+      <div class="monthly-repayments">
+      <p >Your monthly repayments</p>
+      <h1 class="amount" id="amount">€0</h1>
+       <hr>
+       <p>Total you'll repay over the time</p>
+       <h1 class="last-amount" id="lastAmount">€0</h1>
+    </div>
+    </article> -->
+    
+  </section>
+
+</body>
+</html>
